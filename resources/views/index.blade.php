@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>javarun.pl Maciej Kryger</title>
+        <title>javarun.pl</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -21,7 +21,7 @@
             }
 
             .full-height {
-                height: 100vh;
+                height: 90vh;
             }
 
             .flex-center {
@@ -61,6 +61,19 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            .footer{
+                text-align:center;
+                display:block;
+                width:100%;
+                overflow-x:auto;
+                color:#fff!important;
+                background-color:#000!important;
+                padding-top:24px!important;
+                padding-bottom:24px!important;
+                position:absolute;
+                bottom:0;
+                left:0;
+            }
         </style>
     </head>
     <body>
@@ -94,13 +107,13 @@
                     <a href="https://github.com/maciejkryger">my GitHub Account</a>
                 </div>
             </div>
+
+               
         </div>
-
-
-        <div class="top-right">
-                <div class="m-b-md">
+                <div class="footer">
                     Maciej Kryger 2020
                 </div>
-        </div>
+
+      
     </body>
 </html>

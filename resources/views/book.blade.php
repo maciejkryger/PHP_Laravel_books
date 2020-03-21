@@ -8,7 +8,22 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-
+    <style>
+        .footer{
+                text-align:center;
+                display:block;
+                width:100%;
+                overflow-x:auto;
+                color:#fff!important;
+                background-color:#000!important;
+                padding-top:24px!important;
+                padding-bottom:24px!important;
+                position:absolute;
+                bottom:0;
+                left:0;
+                font-family: 'Nunito', sans-serif;
+            }
+    </style>
 </head>
 
 
@@ -64,11 +79,7 @@
 </div>
 
 
-    <div class="w3-black w3-center w3-padding-24">Strona stworzona przez
-        <a href="mailto:javarun.pl@gmail.com" title="javarun" target="_blank" class="w3-hover-opacity">JAVArun</a>
-        na podstawie szablonu <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
-                             class="w3-hover-opacity">w3.css</a>
-    </div>
+    <div class="footer">Maciej Kryger 2020</div>
 </body>
 
 
