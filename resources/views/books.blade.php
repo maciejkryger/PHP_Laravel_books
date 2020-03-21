@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <style>
+        .full-height {
+                height: 90vh;
+            }
         .footer{
                 text-align:center;
                 display:block;
@@ -39,7 +42,7 @@
         <button class="w3-button w3-white w3-border w3-round-large" >dodaj</button>
     </a>
 
-    <div class="w3-responsive">
+    <div class="w3-responsive full-height">
         <table class="w3-table-all w3-hoverable">
             <thead>
             <tr class="w3-light-grey ">
