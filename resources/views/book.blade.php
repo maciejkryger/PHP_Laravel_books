@@ -10,20 +10,20 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <style>
         .full-height {
-                height: 90vh;
+                /*height: 90%;*/
             }
         .footer{
                 text-align:center;
                 display:block;
-                width:100%;
+                width:10%;
                 overflow-x:auto;
                 color:#fff!important;
                 background-color:#000!important;
                 padding-top:24px!important;
                 padding-bottom:24px!important;
                 position:absolute;
-                bottom:0;
-                left:0;
+                top:0;
+                right:0;
                 font-family: 'Nunito', sans-serif;
             }
     </style>
@@ -39,7 +39,7 @@
 
 
 
-    <form method="post" action="/book/store" class="full-height">
+    <form method="post" action="/book/store" class="full-height" id="form">
         @csrf
         
         
@@ -74,15 +74,20 @@
         
         <p>
             <a>
-                <button class="w3-button w3-white w3-border w3-round-large">zapisz</button>
+                <button class="w3-button w3-white w3-border w3-round-large" id="form">zapisz</button>
+
             </a>
         </p>
     </form>
+    
+    <a href="/books"><button class="w3-button w3-white w3-border w3-round-large w3-right">wróć</button></a>
 
 </div>
 
 
-    <div class="footer">Maciej Kryger 2020</div>
+    <div class="footer">
+        <a href="/">Maciej Kryger 2020</a>
+    </div>
 </body>
 
 

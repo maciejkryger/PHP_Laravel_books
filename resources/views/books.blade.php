@@ -11,21 +11,29 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <style>
         .full-height {
-                height: 90vh;
+            /*    height: 90%;
+                overflow: scroll;
+                overflow: auto;*/
+            
+                position:relative; /* needed for footer positioning*/
+                margin:0 auto; /* center, not in IE5 */
+                height:auto !important; /* real browsers */
+                height:100%; /* IE6: treaded as min-height*/
+                min-height:100%;
             }
         .footer{
                 text-align:center;
                 display:block;
-                width:100%;
+                width:10%;
                 overflow-x:auto;
                 color:#fff!important;
                 background-color:#000!important;
                 padding-top:24px!important;
                 padding-bottom:24px!important;
                 position:absolute;
-                bottom:0;
-                left:0;
-                font-family: 'Nunito', sans-serif;
+                top:0;
+                right:0;
+                font-family: 'Nunito', sans-serif;  
             }
     </style>
 </head>
@@ -82,7 +90,9 @@
     </div>
 
 
-    <div class="footer">Maciej Kryger 2020</div>
+    <div class="footer">
+        <a href="/">Maciej Kryger 2020</a>
+    </div>
 </body>
 </html>
 
