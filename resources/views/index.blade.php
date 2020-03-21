@@ -61,6 +61,19 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            .header{
+                text-align:center;
+                display:block;
+                width:100%;
+                overflow-x:auto;
+                color:#fff!important;
+                background-color:#000!important;
+                padding-top:24px!important;
+                padding-bottom:24px!important;
+                position:absolute;
+                top:0;
+                left:0;
+            }
             .footer{
                 text-align:center;
                 display:block;
@@ -77,6 +90,7 @@
         </style>
     </head>
     <body>
+        <div class="header"></div>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -96,13 +110,13 @@
                 <div class="title m-b-md">
                     My Projects
                 </div>
-
+                
                 <div class="links">
                     <a href="/books">Books in PHP</a>
                     <a href="https://github.com/maciejkryger/PHP_Laravel_books">Books on GitHub</a>
                     <a href="http://80.211.242.50:8080/qunsztowna/">QUNSZTOWNA in Java Spring</a>
-                    <a href="https://github.com/maciejkryger/myWebShop">Qunsztowna Project on GitHub</a>
-                    <a href="https://car-rent-4team.herokuapp.com/">CarRent in Java Spring</a>
+                    <a href="https://github.com/maciejkryger/myWebShop">Qunsztowna on GitHub (private)</a>
+                    <a href="https://car-rent-4team.herokuapp.com/">CarRent in Java Spring (herokuapp, please wait...)</a>
                     <a href="https://github.com/JacobTheLiar/sda-4team-carrent">CarRent on GitHub</a>
                     <a href="https://github.com/maciejkryger">my GitHub Account</a>
                 </div>
