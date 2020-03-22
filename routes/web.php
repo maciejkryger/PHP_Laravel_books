@@ -26,8 +26,8 @@ Route::get('/', function () {
 
 Route::get('/books', 'BooksController@show') ;
 
+Route::get('/books/del/{id}', 'BooksController@remove');
+
 Route::get('/book/add', 'BooksController@add');
 
-Route::post('/book/store', 'BooksController@store'); 
-
-Route::get('/book/del/{id}', 'BooksController@remove');
+Route::post('/book/save', 'BooksController@save'); 

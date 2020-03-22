@@ -76,7 +76,7 @@
                     <td><?= $book->last_update; ?></td>
                     <td>
 
-                        <form method="get" action="/book/del/<?= $book->id; ?>" onchange="this.form.submit()">
+                        <form method="get" action="/books/del/<?= $book->id; ?>" onchange="this.form.submit()">
                             <button class="w3-button w3-white w3-border w3-round-large">usuń</button>
                         </form>
 

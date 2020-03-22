@@ -49,6 +49,7 @@
             }
 
             .links > a {
+                text-align:left;
                 color: #636b6f;
                 padding: 0 25px;
                 font-size: 13px;
@@ -62,6 +63,7 @@
                 margin-bottom: 30px;
             }
             .header{
+                align-items: left;
                 text-align:center;
                 display:block;
                 width:100%;
@@ -106,8 +108,8 @@
                 </div>
             @endif
 
-            <div class="content">
-                <div class="title m-b-md">
+            <div class="content" >
+                <div class="title m-b-md ">
                     My Projects
                 </div>
                 
@@ -116,18 +118,14 @@
                     <a href="https://github.com/maciejkryger/PHP_Laravel_books">Books on GitHub</a>
                     <a href="http://80.211.242.50:8080/qunsztowna/">QUNSZTOWNA in Java Spring</a>
                     <a href="https://github.com/maciejkryger/myWebShop">Qunsztowna on GitHub (private)</a>
-                    <a href="https://car-rent-4team.herokuapp.com/">CarRent in Java Spring (herokuapp, please wait...)</a>
+                    <a href="https://car-rent-4team.herokuapp.com/">CarRent in Java Spring (herokuapp)</a>
                     <a href="https://github.com/JacobTheLiar/sda-4team-carrent">CarRent on GitHub</a>
                     <a href="https://github.com/maciejkryger">my GitHub Account</a>
                 </div>
             </div>
-
-               
         </div>
-                <div class="footer">
-                    Maciej Kryger 2020
-                </div>
-
-      
+        <div class="footer">
+            Maciej Kryger 2020
+        </div>      
     </body>
 </html>

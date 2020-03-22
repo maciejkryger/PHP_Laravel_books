@@ -16,20 +16,31 @@ return view('books',compact('books','categories'));
 
 public function add(){
 	$categories=Category::all();
-return view('book',compact('categories'));
+	$action=false;
+    $title= request('title');
+    $author=request('author');
+    $publishing_house = request('publishing_house');
+return view('book',compact('action','categories','title','author','publishing_house'));
 }
 
-public function store(){
- 
-      $book = new Book;
+public function save(){
+	$categories= Category::all(); 
 
-        $book->title = request('title');
-		$book->author = request('author');
-		$book->publishing_house = request('publishing_house');
-		$book->category = request('category');
-        $book->save();
+      	if(request('title')==null  ||  request('author')==null){
+      		$action=true;
+      		$title= request('title');
+      		$author=request('author');
+      		$publishing_house = request('publishing_house');
+			return view('book',compact('action','categories','title','author','publishing_house'));
+      	}
 
-	$categories= Category::all();
+    $book = new Book;
+    $book->title = request('title');
+	$book->author = request('author');
+	$book->publishing_house = request('publishing_house');
+	$book->category = request('category');
+    $book->save();
+
 	$books = Book::all();
 return view('books',compact('books','categories'));
 }

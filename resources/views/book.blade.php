@@ -39,22 +39,40 @@
 
 
 
-    <form method="post" action="/book/store" class="full-height" id="form">
+    <form method="post" action="/book/save" class="full-height" id="form">
         @csrf
         
+  
+       <?php if ($action): ?>
+
+        <p style="color: #FFFFFF; background-color: black ; width: 210px">wypełnij wymagane pola !!!</p>
+
+        <?php endif ?>
         
+        
+
         <p>
             <label><b>Tytuł</b></label>
-            <input type="text" name="title" placeholder="tytuł" class="w3-input w3-border">
+            <input type="text" maxlength="50" name="title" placeholder="tytuł" value="<?=$title;?>" class="w3-input w3-border">
+            <?php if ($action): ?>
+            <?php if ($title==null): ?>
+            <p style="color: #7CFC00">* pole wymagane</p>
+            <?php endif ?>
+            <?php endif ?>
         </p>
 
         <p>
             <label><b>Autor</b></label>
-            <input type="text" name="author" placeholder="autor" class="w3-input w3-border">
+            <input type="text" maxlength="30" name="author" placeholder="autor" value="<?=$author;?>" class="w3-input w3-border">
+            <?php if ($action): ?>
+            <?php if ($author==null): ?>
+            <p style="color: #7CFC00">* pole wymagane</p>
+            <?php endif ?>
+            <?php endif ?>
         </p>
         <p>
             <label><b>Wydawnictwo</b></label>
-            <input type="text" name="publishing_house" placeholder="wydawnictwo" class="w3-input w3-border"
+            <input type="text" maxlength="20" name="publishing_house" placeholder="wydawnictwo" value="<?=$publishing_house;?>" class="w3-input w3-border"
                    
         </p>
 
