@@ -5,10 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>javarun.pl</title>
+        <!-- title icon -->
+        <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+        <link rel="shortcut icon" href="{{ URL::asset('/favicon.ico') }}" type="image/x-icon">
+        <link rel="icon" href="{{ URL::asset('/favicon.ico') }}" type="image/x-icon">
+      <!--   <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+        <!-- <link rel="shortcut icon" href="<?php echo asset('/favicon.ico'); ?>"> -->
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
+       
         <!-- Styles -->
         <style>
             html, body {
@@ -118,7 +124,7 @@
                     <a href="https://github.com/maciejkryger/PHP_Laravel_books">Books on GitHub</a>
                     <a href="http://80.211.242.50:8080/qunsztowna/">QUNSZTOWNA in Java Spring</a>
                     <a href="https://github.com/maciejkryger/myWebShop">Qunsztowna on GitHub (private)</a>
-                    <a href="https://car-rent-4team.herokuapp.com/">CarRent in Java Spring (herokuapp)</a>
+                    <a href="http://80.211.246.169/car-rent/">CarRent in Java Spring</a>
                     <a href="https://github.com/JacobTheLiar/sda-4team-carrent">CarRent on GitHub</a>
                     <a href="https://github.com/maciejkryger">my GitHub Account</a>
                 </div>

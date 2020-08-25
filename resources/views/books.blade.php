@@ -66,7 +66,7 @@
             </thead>
             <?php foreach ($books as $book):?>
                      
-                <tr>
+                <tr id="js-books">
                     <td><?= $book->id; ?></td>
                     <td><?= $book->title; ?></td>
                     <td><?= $book->author; ?></td>
@@ -75,9 +75,9 @@
                     <td><?= $book->creation_date; ?></td>
                     <td><?= $book->last_update; ?></td>
                     <td>
-
-                        <form method="get" action="/books/del/<?= $book->id; ?>" onchange="this.form.submit()">
-                            <button class="w3-button w3-white w3-border w3-round-large">usuń</button>
+                        
+                        <form method="get" action="/books/del/<?= $book->id; ?>" onchange="this.form.submit()" >
+                            <button class="w3-button w3-white w3-border w3-round-large" >usuń</button>
                         </form>
 
                     </td>
@@ -94,6 +94,8 @@
         <a href="/">Maciej Kryger 2020</a>
     </div>
 </body>
+
+
 </html>
 
 
